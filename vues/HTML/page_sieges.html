@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinePro - Choix de siège</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../bootstrap/css/bootstrap.css'>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+    <script src='../../bootstrap/js/bootstrap.bundle.js'></script>
+    <script defer src="../../jquery/jquery-3.7.1.min.js"></script>
+    <script defer src="../../js/page_siege.js"></script>
+    <link rel="stylesheet" href="../../CSS/general.css">
+    <link rel="stylesheet" href="../../CSS/page_siege.css">
+    <link rel="stylesheet" href="../../CSS/barre_progres.css">
+
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-between">
+        
+        <div class="bg-dark">
+            <!--Barre en haut-->
+            <div class="px-4 py-1 container-fluid d-flex justify-content-between">
+                <div class="fs-1 d-flex justify-content-between align-items-center">                    
+                    <i class="bi bi-film text-warning d-block"></i>
+                    <span class="text-white d-block">Cinepro</span>
+
+                </div>
+                <div class="d-flex justify-content-between align-items-center recherche-connexion-panier">
+                    <form class="container-fluid p-1 d-flex justify-content-evenly bg-light" action="" method="get">
+                            <select name="categorie">
+                                <option selected>Tout</option>
+                                <option value="film">Film</option>
+                                <option value="categorie-film">Catégorie</option>
+                                <option value="promotion">Promotion</option>
+                            </select>
+                            <input class="barre-recherche form-control-lg ms-1" type="search" placeholder="Rechercher film, catégorie, etc." name="recherche" >
+                            <button type="submit" class="bg-dark"><i class="bi bi-search text-white bg-dark fs-3 p-2"></i></button>
+                    </form>
+                    <div class="haut-droit-header">
+                        <div class="d-flex align-items-center justify-content-end ">
+                            <a href="connexion.html" class="text-decoration-none ">
+                                <div class="fs-5 fw-bold text-wrap text-dark bg-light border p-2 rounded">
+                                    Se connecter
+                                </div>
+                            </a>
+                            <div>
+                                <i class="bi bi-cart2 text-white fs-1 ps-2 ms-3"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Le bas du header-->
+            <div class="container-fluid d-flex">
+                <div class="container">
+                    <ul class="nav nav-fill nav-pills">
+                        <li class="nav-item fs-5">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-house-door-fill"></i> Accueil</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-tv"></i> Cinémas</a>
+                        </li>
+                                            
+                        <li class="nav-item fs-5">
+                        <a class="nav-link text-white" href="contact.html"><i class="bi bi-telephone"></i> Contact</a>
+                        </li>
+    
+                    </ul> 
+                </div>
+                <div class="container-fluid d-flex justify-content-end align-items-center">
+
+                    <div class="fs-5 text-white ps-5">
+                        <i class="bi bi-ticket-perforated text-"></i> Mes Réservations                   
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Contenu principal-->
+        <div class="p-5 d-flex flex-column align-items-center">
+            <!--Barre de progrès-->
+            <div class="d-flex justify-content-evenly align-items-center container-fluid pb-5">
+                <a href="" class="text-decoration-none etape text-center"><div class="bg-dark text-secondary p-1 rounded fs-3 border border-light">Film</div></a>                
+                <div class="fs-3">></div>
+                <a href="" class="text-decoration-none etape text-center"><div class="bg-secondary text-light p-1 rounded fw-bold fs-3 border border-dark border-3">Siège</div></a>                
+                <div class="fs-3">></div>
+                <a href="" class="text-decoration-none etape text-center"><div class="bg-dark text-secondary p-1 rounded fs-3 border border-dark">Points</div></a>                
+                <div class="fs-3">></div>
+                <a href="" class="text-decoration-none etape text-center"><div class="bg-dark text-secondary p-1 rounded fs-3 border border-dark">Tickets</div></a>                
+                <div class="fs-3">></div>
+                <a href="" class="text-decoration-none etape text-center"><div class="bg-dark text-secondary p-1 rounded fs-3 border border-dark">Paiement</div></a>                
+            </div>
+            <h1 class="align-self-start pb-5">Sièges - Choisissez votre siège</h1>
+            <form action="" class="formulaire-siege">
+                <table class="container-fluid ">
+                    <tr class="fs-3 text-center">
+                        <td></td><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th>
+                    </tr>
+                    <tr>
+
+                        <th class="fs-3">1</th>
+                        <td class="text-center"><input type="radio"  id="1" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">2</th>
+                        <td class="text-center"><input type="radio"  id="11" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="12" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">3</th>
+                        <td class="text-center"><input type="radio"  id="21" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="22" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">4</th>
+                        <td class="text-center"><input type="radio"  id="31" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="32" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-person-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">5</th>
+                        <td class="text-center"><input type="radio"  id="41" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="42" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">6</th>
+                        <td class="text-center"><input type="radio"  id="51" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="52" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-person-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">7</th>
+                        <td class="text-center"><input type="radio"  id="61" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="62" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">8</th>
+                        <td class="text-center"><input type="radio"  id="71" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="72" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">9</th>
+                        <td class="text-center"><input type="radio"  id="81" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="82" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+                    <tr>
+                        <th class="fs-3">10</th>
+                        <td class="text-center"><input type="radio"  id="91" name="choixSiege" hidden value=1><label for="1"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="92" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+                        <td class="text-center"><input type="radio"  id="2" name="choixSiege" hidden value=1><label for="2"><i class="bi bi-square fs-1"></i></label></i></td>
+
+
+                    </tr>
+
+                </table>
+                <div class="p-3">
+                    <i class="bi bi-square fs-3 ps-5"> Disponible</i> 
+                    <i class="bi bi-person-square fs-3 ps-5"> Occupé</i> 
+                </div>
+                <div class="boutons d-flex pt-5">
+                    <div class="vide-boutons"></div>
+                    <div class="container-fluid d-flex justify-content-between ">
+                        <a href="?action=voirAccueil">
+                            <div class="btn btn-dark btn-lg">
+                                Annuler
+                            </div>
+                        </a>
+                        <input id="ajout-panier" type="button" value="Ajouter réservation au panier" class="btn btn-dark btn-lg">
+                        <input id="proceder-paiement" type="button" value="Procéder au paiement" class="btn btn-dark btn-lg">
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <!--Pied de page-->
+        <div class="d-flex flex-wrap container-fluid justify-content-end align-items-center pied">
+            <div class="text-white">
+                &copy; CinePro
+            </div>
+        </div>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+/*Contenu*/
+.conteneur-btn-recherche {
+    width: 100%;
+}
+
+.recherche {
+    width: 50%;
+}
+
+/*Version mobile
+
+
+ @media (max-width: 600px) {
+    .barre-recherche {
+        width: 100%;
+    }
+
+
+ }*/

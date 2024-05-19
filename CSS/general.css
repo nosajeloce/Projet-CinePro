@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Header côté client*/
+
+.barre-recherche {
+    width: 85%;
+}
+
+
+.recherche-connexion-panier {
+    width: 75%;
+}
+
+.haut-droit-header {
+    width: 40%;
+}
+
+select {
+    width: 10%;
+}
+
+/*pied de page*/
+.pied {
+    background-color: #232F3E;
+    height: 7vh;
+    padding: 20px;
+}

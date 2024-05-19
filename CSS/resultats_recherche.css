@@ -1,0 +1,11 @@
+.film {
+    height: 150px;
+}
+
+.film > div {
+    height: 150px;
+}
+
+img {
+    height: 85%;
+}

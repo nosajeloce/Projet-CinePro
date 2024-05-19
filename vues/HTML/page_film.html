@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cinepro - Connexion</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='../../bootstrap/js/bootstrap.bundle.js'></script>
+    <script defer src="../../jquery/jquery-3.7.1.min.js"></script>
+    <script defer src="../../js/page_film.js"></script>
+    <link rel="stylesheet" href="../../CSS/general.css">    
+    <link rel="stylesheet" href="../../CSS/page_film.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../../bootstrap/css/bootstrap.css'>
+    <link rel="stylesheet" href="../../bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-between">
+        
+        <div class="bg-dark">
+            <!--Barre en haut-->
+            <div class="px-4 py-1 container-fluid d-flex justify-content-between">
+                <div class="fs-1 d-flex justify-content-between align-items-center">                    
+                    <i class="bi bi-film text-warning d-block"></i>
+                    <span class="text-white d-block">Cinepro</span>
+
+                </div>
+                <div class="d-flex justify-content-between align-items-center recherche-connexion-panier">
+                    <form class="container-fluid p-1 d-flex justify-content-evenly bg-light" action="" method="get">
+                            <select name="categorie">
+                                <option selected>Tout</option>
+                                <option value="film">Film</option>
+                                <option value="categorie-film">Catégorie</option>
+                                <option value="promotion">Promotion</option>
+                            </select>
+                            <input class="barre-recherche form-control-lg ms-1" type="search" placeholder="Rechercher film, catégorie, etc." name="recherche" >
+                            <button type="submit" class="bg-dark"><i class="bi bi-search text-white bg-dark fs-3 p-2"></i></button>
+                    </form>
+                    <div class="haut-droit-header">
+                        <div class="d-flex align-items-center justify-content-end ">
+                            <a href="connexion.html" class="text-decoration-none ">
+                                <div class="fs-5 fw-bold text-wrap text-dark bg-light border p-2 rounded">
+                                    Se connecter
+                                </div>
+                            </a>
+                            <div>
+                                <i class="bi bi-cart2 text-white fs-1 ps-2 ms-3"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Le bas du header-->
+            <div class="container-fluid d-flex">
+                <div class="container">
+                    <ul class="nav nav-fill nav-pills">
+                        <li class="nav-item fs-5">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-house-door-fill"></i> Accueil</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                        <a class="nav-link text-white" href="#"><i class="bi bi-tv"></i> Cinémas</a>
+                        </li>
+                                            
+                        <li class="nav-item fs-5">
+                        <a class="nav-link text-white" href="contact.html"><i class="bi bi-telephone"></i> Contact</a>
+                        </li>
+    
+                    </ul> 
+                </div>
+                <div class="container-fluid d-flex justify-content-end align-items-center">
+
+                    <div class="fs-5 text-white ps-5">
+                        <i class="bi bi-ticket-perforated text-"></i> Mes Réservations                   
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Contenu principal-->
+        <div class="p-5 d-flex flex-column">
+            <h1>Oppenheimer</h1>
+            <div class="d-flex align-items-center">
+                <div class="image-film d-flex align-items-center justify-content-center ">
+                    <img src="../../movie.PNG" alt="">
+                </div>
+                <div class="ms-3 bg-dark container-fluid d-flex align-items-center justify-content-center border border-dark">
+                    <iframe src="https://www.youtube.com/embed/uYPbbksJxIg?si=jdQFG84J0u5zLQcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+                <div class="infos-film d-flex flex-column align-items-center justify-content-evenly">
+                    <div>Genre: Thriller</div>
+                    <div>Durée: 1h30</div>
+                    <div class="d-flex justify-content-center align-items-center image-classement"><img src="../../14a.PNG" alt=""></div>
+                </div>
+                <div>
+                    <h2>Description du film</h2>
+                    Christopher Nolan's Oppenheimer (2023), cast Cillian Murphy in the title role of a film that explored Oppenheimer's role in the development of the atomic bomb and the events that led to the 1954 security hearing.
+                </div>
+            </div>
+            <!--Cinémas-->
+            <form action="choisirCinemaHoraire" class="cinemas align-self-center">
+                <input type="text" id="id-cinema" name="id-cinema" hidden>
+                <div>
+                    <a href="" class="text-decoration-none text-dark" id="1">
+                        <div class="fs-2 p-3 mt-5 d-flex justify-content-between border border-dark rounded">
+                            <div>
+                                Victoria Theater
+                            </div>
+                            <div>V</div>
+                        </div>
+                    </a>
+                    <div class="border border-dark p-2 rounded horaires" id="1-horaire">
+    
+                        <div class="ps-4 pt-2 pb-4 fw-bold">6400 16e avenue Montréal QC H1X 2S9</div>
+                        <div class="d-flex justify-content-start ps-4 pe-4">
+                            <div>
+                                <label for="date">Date de réservation: </label>
+                                <select name="date" id="date" class="form-select d-inline">
+                                    <option value="2024-05-24">24 mai</option>
+                                    <option value="2024-05-25">25 mai</option>
+                                    <option value="2024-05-26">26 mai</option>
+                                    <option value="2024-05-27">27 mai</option>
+                                    <option value="2024-05-28">28 mai</option>
+                                </select>
+        
+                            </div>
+                            <div class="ms-3">
+                                <label for="heure">Heure de réservation: </label>
+                                <select name="heure" id="heure" class="form-select d-inline">
+                                    <option value="14:00">14h00</option>
+                                    <option value="16:00">16h00</option>
+                                    <option value="18:00">18h00</option>
+                                    <option value="20:00">20h00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" value="Choisir horaire" class="btn-lg btn-dark">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="" class="text-decoration-none text-dark" id="14">  
+                        <div class="fs-2 p-3 mt-2 d-flex justify-content-between border border-dark">
+                            <div>
+                                Victoria Theater
+                            </div>
+                            <div>V</div>
+                        </div>
+                    </a>
+                    <div class="border border-dark p-2 rounded horaires" id="14-horaire">
+    
+                        <div class="ps-4 pt-2 pb-4 fw-bold">6400 16e avenue Montréal QC H1X 2S9</div>
+                        <div class="d-flex justify-content-start ps-4 pe-4">
+                            <div>
+                                <label for="date">Date de réservation: </label>
+                                <select name="date" id="date" class="form-select d-inline">
+                                    <option value="2024-05-24">24 mai</option>
+                                    <option value="2024-05-25">25 mai</option>
+                                    <option value="2024-05-26">26 mai</option>
+                                    <option value="2024-05-27">27 mai</option>
+                                    <option value="2024-05-28">28 mai</option>
+                                </select>
+        
+                            </div>
+                            <div class="ms-3">
+                                <label for="heure">Heure de réservation: </label>
+                                <select name="heure" id="heure" class="form-select d-inline">
+                                    <option value="14:00">14h00</option>
+                                    <option value="16:00">16h00</option>
+                                    <option value="18:00">18h00</option>
+                                    <option value="20:00">20h00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <input type="submit" value="Choisir horaire" class="btn-lg btn-dark">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <!--Pied de page-->
+        <div class="d-flex flex-wrap container-fluid justify-content-end align-items-center pied">
+            <div class="text-white">
+                &copy; CinePro
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

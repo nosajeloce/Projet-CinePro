@@ -1,0 +1,38 @@
+/* Contenu principal de la page*/
+.formulaire-contact {
+    width: 70%;
+
+}
+
+.infos-contact {
+    width: 30%;
+}
+
+#courriel {
+    width: 30%;
+}
+
+
+
+/* mobile
+@media (max-width:850px) {
+
+    .infos-contact {
+       width: 100%;
+       display: flex;    
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .formulaire-contact {
+        width: 100%;
+    }
+    
+    .bas-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}  */

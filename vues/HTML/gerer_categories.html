@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cinepro - Gérer catégories</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../bootstrap/css/bootstrap.css'>
+    <link rel="stylesheet" href="../bootstrap/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../CSS/gerer_X.css">
+    <script src='../bootstrap/js/bootstrap.bundle.js'></script>
+    <script src="../jquery/jquery-3.5.0.min.js"></script>
+
+</head>
+<body>
+    <div class="bg-dark">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-start align-items-center fs-1">                    
+                    <i class="bi bi-film text-warning d-block test "></i>
+                    <div class="text-white ps-2">Cinepro</div>
+                </div>
+                <div class="d-flex justify-content-end align-items-center">
+                    <!--Menu (Options Gérer et Consulter)-->                
+                    <ul class="nav nav-pills container-fluid">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle text-white fs-4" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Gérer</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="gerer_comptes.html">Comptes</a></li>
+                              <li><a class="dropdown-item" href="gerer_reservations.html">Réservations</a></li>
+                              <li><a class="dropdown-item" href="gerer_films.html">Films</a></li>
+                              <li><a class="dropdown-item" href="gerer_categories.html">Catégories</a></li>
+                              <li><a class="dropdown-item" href="gerer_promotions.html">Promotions</a></li>
+                              <li><a class="dropdown-item" href="gerer_cinemas.html">Cinémas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--Bouton Retour au site-->
+                    <div class="text-white border border-light rounded p-1 d-flex align-items-center">
+                        <i class="bi bi-arrow-90deg-left fs-4"></i>
+                        <div class="ps-3 fs-5">Retour au site</div>
+                    </div>      
+                    <!--Icône Compte-->                         
+                    <div class="ps-4">                            
+                        <ul class="nav nav-pills">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-person-circle text-white fs-1"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Modifier votre compte</a></li>
+                                </ul>
+                            </li>        
+                        </ul>  
+                    </div>                        
+                </div>        
+                    
+            </div>
+        </div>
+        <!--Liste de réservationsr-->
+        <div class="bg-light p-5">
+            <h1 class="text-dark">Liste de catégories</h1>
+            <div class="d-flex justify-content-end conteneur-btn-recherche">
+                <div class="d-flex flex-wrap justify-content-evenly recherche" >
+                    <select name="categorie-recherche" id="categorie-recherche" class="me-3form-select-sm">
+                        <option value="" selected>Chercher par...</option>
+                        <option value="">Catégorie recherche 2</option>
+                        <option value="">Catégorie recherche 3</option>
+                        <option value="">Catégorie recherche 4</option>
+                    </select>                
+                    <input type="search" class="form-control-lg barre-recherche" name="rechercher-comptes" placeholder="Chercher par nom, prénom ou courriel">
+                </div>
+                <div class="border border-secondary btn fw-bold ms-1 me-5 fs-3 bg-dark text-light">
+                    + Ajouter
+                </div>
+            </div>
+
+            <!--Conteneur de la liste des réservations-->
+            <div class="container border border-secondary mt-4">
+                test test
+            </div>
+        </div>
+        <!--Pied de page-->
+        <div class="d-flex flex-wrap justify-content-end align-items-center pied">
+            <div class="text-white">
+                &copy; CinePro
+            </div>
+        </div>
+
+</body>
+</html>

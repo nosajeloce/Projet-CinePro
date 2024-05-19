@@ -1,0 +1,45 @@
+/*Contenu principal*/
+/*Facture*/
+.infos-item-panier{
+    height: 120px;
+    width: 50%;
+}
+
+.image-film > img {
+    height: 97%;
+    width: 100%;
+}
+
+.image-film {
+    width: 15%;
+}
+
+#infos-pt1{
+    width: 50%;
+}
+
+
+/*Formulaire*/
+
+
+.saisie-billet-texte {
+    width: 50px;
+}
+
+
+.formulaire-billets, .section-billets{
+    width: 48%;
+}
+
+.formulaire-billets {
+    height: 50px;
+}
+
+.infos-facture {
+    width: 25%;
+}
+
+/*Bouton suivants et annuler*/
+.boutons-decision{
+    width: 25%;
+}

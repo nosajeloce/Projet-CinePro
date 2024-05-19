@@ -1,0 +1,28 @@
+.image-film {
+    height: 315px;
+}
+
+.image-film > img {
+    height: 100%;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+.infos-film {
+    width: 38%;
+}
+
+.image-classement {
+    height: 85px;
+}
+
+.image-classement > img {
+    height: 100%;
+}
+
+.cinemas {
+    width: 75%;
+}
